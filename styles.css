@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #50b3a2;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#documentation {
+    width: 50%;
+    margin: 2em auto;
+    text-align: center;
+
+}
+
+#animal-section {
+    width: 50%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+#animal-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #50b3a2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #338b7b;
+}
