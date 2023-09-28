@@ -14,17 +14,27 @@
     <main>
         <scetion id="documentation">
             <h1>Documentation</h1>
-            <p>Let's keep it short, simple, and (critically) sweet!</p>
-            <p>Base URL: https://api.adorableanimals.dev</p>
+            <p>Let's keep it short, simple, and adorable</p>
             
             <section id="endpoints">
                 <h1>Endpoint(s)</h1>    
-                <p>Ol' reliable</p>
+                <div id="base-url">
+                    <p>Base URL: </p>
+                    <div class="code-container">
+                        <code class="codeBlock">https://api.adorableanimals.dev</code>
+                        <button onclick="copyCode()">⎘</button>
+                    </div>
+                </div>
 
-                <code class="language-plaintext highlighter-rouge">/facts</code>
-            <section id="animal-section">
-                <img id="animal-image" alt="Adorable Animal" />
-                <button onclick="fetchAnimal()">Fetch Adorable Animal</button>
+                <div class="endpoint">
+                    <code>/random</code>
+                    <p>Generate a random image</p>
+                </div>
+
+            <section id="demo">
+                <h1>Endpoint(s)</h1>    
+                <img id="demo-image" alt="Example Adorable Animal Image" />
+                <button onclick="fetchAnimal()">Generate Adorability</button>
             </section>
         </scetion>
     </main>
