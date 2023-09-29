@@ -6,13 +6,8 @@ function fetchAnimal() {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            // Retrieve the URL of the adorable animal from the API response
-            //const animalUrl = data.imageUrl;
+            const animalUrl = data.imageUrl
 
-            // delete
-            animalUrl = 'https://adorableanimals.s3.amazonaws.com/IMG_3672.jpg';
-
-            // Get the image element and set its src attribute to the animal URL
             document.getElementById('demo-image').src = animalUrl;
         })
         .catch(error => console.error('Error fetching adorable animal:', error));

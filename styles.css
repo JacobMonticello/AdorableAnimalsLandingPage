@@ -6,13 +6,12 @@ body {
 }
 
 header {
-    background-color: #50b3a2;
     color: #ffffff;
     text-align: center;
     padding: 1em 0;
     /* background: linear-gradient(to right, #cb73004f, #00ff6e); */
     background: linear-gradient(217deg, rgba(209, 61, 61, 0.8), rgba(255,0,0,0) 70.71%),
-                linear-gradient(127deg, rgba(136, 241, 136, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(127deg, rgba(255, 166, 64, 0.8), rgba(0,255,0,0) 70.71%),
                 linear-gradient(336deg, rgba(139, 139, 245, 0.8), rgba(0,0,255,0) 70.71%);
 }
 
