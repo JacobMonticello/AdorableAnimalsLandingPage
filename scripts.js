@@ -13,7 +13,7 @@ function fetchAnimal() {
             animalUrl = 'https://adorableanimals.s3.amazonaws.com/IMG_3672.jpg';
 
             // Get the image element and set its src attribute to the animal URL
-            document.getElementById('animal-image').src = animalUrl;
+            document.getElementById('demo-image').src = animalUrl;
         })
         .catch(error => console.error('Error fetching adorable animal:', error));
 }
@@ -27,7 +27,6 @@ function copyCode() {
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
   
-     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
   
     // Alert the copied text
