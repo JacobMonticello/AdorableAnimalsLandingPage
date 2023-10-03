@@ -15,15 +15,11 @@ function fetchAnimal() {
 
 
 function copyCode() {
-    // Get the text field
-    var copyText = document.getElementById("myInput");
+    var codeBlock = document.getElementById("code-text");
   
-    // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(codeBlock.innerHTML);
+
   
     // Alert the copied text
-    alert("Copied the text: " + copyText.value);
+    alert("Code copied!");
 }
