@@ -9,8 +9,8 @@
 <body>
     <header>
         <h1>Welcome to Adorable Animals API!</h1>
-        <h3>For all your adorable animal needs</h3>
-        <h3>!!!! This site is a WIP! We are working quickly to get things up to speed. In the meaning, GET https://api.adorableanimals.dev/random for all your animal needs !!!!</h3>
+        <!-- <h3>For all your adorable animal needs</h3> -->
+        <h1 style="color: rgb(222, 31, 31)">!!!! This site is a WIP! We are working quickly to get things up to speed !!!!</h3>
     </header>
     <main>
         <scetion id="documentation">
@@ -21,22 +21,35 @@
                 <h1>Endpoint(s)</h1>    
                 <p>Just one for now, may add more in the future!</p>
                 <div id="base-url">
-                    <p class="code-description">Base URL: </p>
+                    <p class="code-description">Base URL:</p>
                     <div class="code-container">
-                        <code id="code-text">https://api.adorableanimals.dev</code>
-                        <button onclick="copyCode()">⎘</button>
+                        <code id="url-text">https://api.adorableanimals.dev</code>
+                        <button onclick="copyCode('url-text')">⎘</button>
                     </div>
                 </div>
 
                 <div class="endpoint">
-                    <code>/random</code>
+                    <p class="code-type">GET</p>
+                    <div class="code-container">
+                        <code id="random-text">/random</code>
+                        <button onclick="copyCode('random-text')">⎘</button>
+                    </div>
                     <p>Generate a random image</p>
                 </div>
+                <p>Sample response: </p>
+                <code id="random-text">{"imageUrl":"https://adorableanimals.s3.amazonaws.com/bear.jpeg"}</code>
+
+            <section id="source">
+                <h1>Source</h1>    
+                <a href="url">Landing Page</a>
+                <a href="url">Raycast Plugin</a>
+            </section>
 
             <section id="demo">
                 <h1>Demo</h1>    
-                <img id="demo-image" alt="Example Adorable Animal Image" />
                 <button onclick="fetchAnimal()">Generate Adorability</button>
+
+                <img id="demo-image" alt="Example Adorable Animal Image" />
             </section>
         </scetion>
     </main>

@@ -14,12 +14,12 @@ function fetchAnimal() {
 }
 
 
-function copyCode() {
-    var codeBlock = document.getElementById("code-text");
+function copyCode(toCopy) {
+    var codeBlock = document.getElementById(toCopy);
   
     navigator.clipboard.writeText(codeBlock.innerHTML);
 
   
     // Alert the copied text
-    alert("Code copied!");
+    //alert("Code copied!");
 }
