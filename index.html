@@ -10,16 +10,18 @@
     <header>
         <h1>Welcome to Adorable Animals API!</h1>
         <!-- <h3>For all your adorable animal needs</h3> -->
-        <h1 style="color: rgb(222, 31, 31)">!!!! This site is a WIP! We are working quickly to get things up to speed !!!!</h3>
+        <h1 style="color: rgb(222, 31, 31)">!!!! This landing page is a WIP! We are working quickly to get things up to speed !!!!</h3>
+        <p style="color: rgb(222, 31, 31)">The API, however, is ready to work!</p>
+
     </header>
     <main>
         <scetion id="documentation">
             <h1>Documentation</h1>
             <p>Let's keep it short, simple, and adorable</p>
             
-            <section id="endpoints">
-                <h1>Endpoint(s)</h1>    
-                <p>Just one for now, may add more in the future!</p>
+            <section id="Base URL">
+                <h1>Base URL</h1>    
+
                 <div id="base-url">
                     <p class="code-description">Base URL:</p>
                     <div class="code-container">
@@ -27,7 +29,11 @@
                         <button onclick="copyCode('url-text')">⎘</button>
                     </div>
                 </div>
+            </section>
 
+            <section id="endpoints">
+                <h1>Endpoint(s)</h1>    
+                <p>Just one for now, may add more in the future!</p>
                 <div class="endpoint">
                     <p class="code-type">GET</p>
                     <div class="code-container">
@@ -38,6 +44,7 @@
                 </div>
                 <p>Sample response: </p>
                 <code id="random-text">{"imageUrl":"https://adorableanimals.s3.amazonaws.com/bear.jpeg"}</code>
+            </section>
 
             <section id="source">
                 <h1>Source</h1>    
@@ -49,7 +56,9 @@
                 <h1>Demo</h1>    
                 <button onclick="fetchAnimal()">Generate Adorability</button>
 
-                <img id="demo-image" alt="Example Adorable Animal Image" />
+                <div id="demo-loading" style="display: none;"></div>
+                <div id="demo-failure" style="display: none;">Failed to load image</div>
+                <img id="demo-image" style="display: none;" alt="Example Adorable Animal Image"/>
             </section>
         </scetion>
     </main>

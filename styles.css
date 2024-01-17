@@ -89,6 +89,26 @@ header {
     text-align: center;
 }
 
+#demo-loading {
+    border: 16px solid #f3f3f3; /* Light grey background */
+    border-top: 16px solid #3498db; /* Blue foreground */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#demo-failure {
+    /* Example styling; replace with your desired loader style */
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+
 #demo-image {
     max-width: 100%;
     height: auto;

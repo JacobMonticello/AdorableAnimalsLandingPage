@@ -1,16 +1,32 @@
 function fetchAnimal() {
-    // Define the API endpoint
     const apiUrl = "https://api.adorableanimals.dev/random";
 
-    // Make a fetch request to the API
+    const demoImage = document.getElementById("demo-image");
+    const demoFailure = document.getElementById("demo-failure");
+    const demoLoading = document.getElementById("demo-loading");
+
+    demoImage.style.display = "none";
+    demoFailure.style.display = "none";
+    demoLoading.style.display = "block";
+
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             const animalUrl = data.imageUrl
 
-            document.getElementById('demo-image').src = animalUrl;
+            demoImage.style.display = "block";
+
+            demoImage.src = animalUrl;
+            //document.getElementById('demo-image').src = animalUrl;
+
         })
-        .catch(error => console.error('Error fetching adorable animal:', error));
+        .catch(error => {
+            demoFailure.style.display = "block";
+            console.error('Error fetching adorable animal:', error)
+        })
+        .finally(() => {
+            demoLoading.style.display = "none";
+        });
 }
 
 
